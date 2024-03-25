@@ -1,0 +1,256 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:fantasy;
+}
+section{
+    width:100%;
+    height:100vh;
+    background:rgb(76, 89, 92);
+    background-size:cover;
+    background-position:center;
+}
+section nav{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    box-shadow:0 0 10px orange;
+    background:white;
+    font-size:20px;
+    position:fixed;
+    left:0;
+    z-index:100;
+}
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+input{
+    width:600px;
+    height:30px;
+    background:skyblue;
+    text-align:center;
+    border-radius:30px;
+}
+button{
+    color:aqua;
+    background:blue;
+    border-radius:20px;
+    position:relative;
+    right:40px;
+}
+section nav ul{
+    list-style: none;
+}
+section nav li{
+    display:inline-block;
+    padding:0 10px;
+}
+section nav li a{
+    text-decoration:none;
+    color:black;
+}
+section nav li a:hover{
+    text-decoration:none;
+    color:deepskyblue;
+}
+section .main{
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    top:10%;
+}
+section .main h1{
+    position:relative;
+    font-size:55px;
+    top:80px;
+    left:25px;
+}
+section .main h1 span{
+    color: deepskyblue;
+    top:100px;
+}
+section .main p{
+    width:650px;
+    text-align:justify;
+    position: relative;
+    line-height:22px;
+    top: 80px;
+    left:25px;
+}
+section .main .mbtn{
+    background:black;
+    border-radius:22px;
+    padding:10px 20px;
+    position:relative;
+    top:100px;
+    left:25px;
+    color:ghostwhite;
+    text-decoration:none;
+    
+}
+.head{
+    width:100%;
+    height:auto;
+    margin:35px 0;
+    
+}
+.head .headbox{
+    width:95%;
+    margin:0 auto;
+   align-items:center;
+    justify-content:space-around;
+    display:flex;
+}
+.head .headbox .headcard{
+    text-align:center;
+    width:320px;
+    height:auto;
+    padding:15px 10px;
+    box-shadow: 0 0 10px deepskyblue; 
+}
+span{
+    color:aqua;
+}
+.books{
+    width: 100%;
+    height: auto;
+    margin-bottom: 35px;
+    background:rgb(76, 89, 92);
+}
+
+.books h1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.books .books_box{
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 0;
+    
+}
+
+.books .books_box .books_card{
+    width: 200px;
+    height: 340px;
+    text-align: center;
+    padding: 3px;
+    margin: auto 10px;
+}
+
+.books .books_box .books_card:hover{
+    /* box-shadow: 0 0 5px black; */
+}
+
+.books .books_box .books_card .books_image{
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border-radius:20px;
+}
+
+.books .books_box .books_card .books_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+    border-radius:20px;
+}
+
+.books .books_box .books_card:hover .books_image img{
+    transform: scale(1.1);
+    opacity:0.5;
+}
+
+.books .books_box .books_card .books_tag p{
+    font-family: queen of camelot;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.books .books_box .books_card .books_tag .books_btn{
+    padding: 8px 20px;
+   background:black;
+    border-radius:22px;
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(IMAGES/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner_btn{
+    padding: 8px 20px;
+    background:black;
+    text-decoration: none;
+    color: ghostwhite;
+    position: relative;
+    border-radius:22px;
+    top: 70%;
+    left: 7%;
+}
+
+footer{
+    width: 100%;
+    background:rgb(76, 89, 92);
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+  
+}
+
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: ghostwhite;
+}
+
+footer .footer_main .tag ul{
+    list-style:none;
+}
+footer .footer_main .tag ul li{
+    padding:6px;
+}
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: deepskyblue;
+    margin-left: 10px;
+}
